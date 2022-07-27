@@ -1,1 +1,64 @@
+:root {
+	--font-family-primary: "Be Vietnam Pro", sans-serif;
+}
 
+body {
+	font-family: var(--font-family-primary);
+	background: linear-gradient(white, aqua);
+}
+
+.container {
+	display: grid;
+	align-content: center;
+}
+
+.data-container {
+	display: grid;
+}
+
+form {
+	text-align: end;
+	padding: 1rem;
+}
+
+button {
+	padding: 0.5em;
+	border-radius: 25px;
+}
+
+.output-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 1rem;
+	font-size: 1.5rem;
+}
+
+div[data="city"] {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-end: 2;
+	justify-self: center;
+}
+div[data="image"] {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-end: 3;
+	justify-self: center;
+	width: 200px;
+}
+
+div[data="feel-like"] {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	justify-self: center;
+}
+
+.output-data {
+	color: white;
+	text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	gap: 0.5rem;
+}

@@ -4,7 +4,64 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Weather App</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="container">
+			<div class="data-container">
+				<form>
+					<input
+						type="text"
+						name="city"
+						id="city"
+						placeholder="Input city name..."
+					/>
+					<button type="submit">Get Weather</button>
+				</form>
+				<div class="output-container">
+					<div class="output-data" data="city">
+						<p>City:</p>
+						<p data-key="city"></p>
+					</div>
+					<div class="output-data" data="image">
+						<img
+							src="./images/sun.png"
+							alt="image"
+							aria-placeholder="image"
+						/>
+					</div>
+					<div class="output-data" data="temp-min">
+						<p>Minimum temperature:</p>
+						<p data-key="temp-min"></p>
+					</div>
+					<div class="output-data" data="temp">
+						<p>Temperature:</p>
+						<p data-key="temp"></p>
+					</div>
+					<div class="output-data" data="temp-max">
+						<p>Maximum Temperature:</p>
+						<p data-key="temp-max"></p>
+					</div>
+					<div class="output-data" data="feel-like">
+						<p>Feels like:</p>
+						<p data-key="feels-like"></p>
+					</div>
+					<div class="output-data" data="humidity">
+						<p>Humidity:</p>
+						<p data-key="humidity"></p>
+					</div>
+					<div class="output-data" data="pressure">
+						<p>Pressure:</p>
+						<p data-key="pressure"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
